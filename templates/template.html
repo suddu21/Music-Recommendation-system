@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>INPUT</title>
+		<link rel="icon" href="https://i.pinimg.com/originals/55/27/89/552789ccf1e4e919e17930976a5e62c9.jpg">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style1.css') }}">
+	</head>
+<body class="bg">
+	<style> 
+		#main {
+			margin-left: auto ;
+			margin-right: auto ;
+			text-align: left ;
+			width: 800px;
+			padding-top: 50px;
+			padding-left: 450px;
+		}
+		.fix {
+			background-color: #73c2fb ; 
+		  border: none;
+		  color: #002366;
+		  padding: 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 30px;
+		  margin: 4px 2px;
+		  cursor: default;
+		  border-radius: 5px;
+		}
+		.fix:h {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+		.fix_button {
+			background-color: #2F9599 ; 
+		  border: none;
+		  color: white;
+		  padding: 10px;
+		  text-align: right;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 25px;
+		  margin: 10px 5px;
+		  cursor: pointer;
+		  border-radius: 50px;
+		  transition-duration: 0.4s;
+		  border: 2px solid white;
+		}
+		.fix_button:hover {
+		  background-color: #F26B38  ;
+		  color: white;
+		}
+		.fix_buttonalign{
+			text-align: center;
+		}
+		.bg {
+			background-image: url(https://i.pinimg.com/originals/11/17/57/111757ad3dc8123c12f263ecc003b009.jpg); 
+		  background-repeat: no-repeat; 
+		  background-size: cover;
+		}
+		.input_width {
+	    width: 300px;
+			height: 50px;
+			font-size: 25px;
+			padding: 12px 20px;
+	  	margin: 8px 0;
+	  	box-sizing: border-box;   
+	  	border-radius: 5px;
+		}
+	</style>
+		<center>
+			<div id="main">
+			<h1 class="fix">Enter the song of your choice</h1>
+				<form method="POST">
+				<input name="text" class="input_width">
+				<input class="fix_button" class="fix_buttonalign" type="submit"  value="Search">
+			</form>
+			</div>
+		</center>
+	</body>
+</html>

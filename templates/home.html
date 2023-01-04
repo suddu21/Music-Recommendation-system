@@ -1,0 +1,120 @@
+<html>
+<head>
+  <title>HOME</title>
+</head>
+<style>
+body {
+  background-color: #d3f6d1;
+  font-family: "Times New Roman";
+}
+img{
+  width: 500px;
+}
+.input-box {
+  width: 380px;
+  height: 680px;
+  background-color: white;
+  border-radius: 3px;
+  box-align: center;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-family: serif;
+  font-size: 35px;
+}
+
+
+form {
+  width: 300px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.home-box {
+  width: 1000px;
+  height: 600px;
+  border-radius: 3px;
+  box-align: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  width: 250px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #42b883;
+  color: white;
+  font-size: 18px;
+}
+h3{
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+}
+button {
+  background-color: #42b883; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+}
+.container {
+  top: 50%;
+  left: 50%;
+  width: 30em;
+  height: 18em;
+  position: fixed;
+  margin-top: 25%;
+  padding-top: 500px;
+      }
+</style>
+<body>
+  <div>
+<div style="text-align: center;">
+<img src="https://bmsit.ac.in/public/assets/images/bmslogo.png">
+</div>
+
+  <h3>DEPARTMENT OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</h3>
+  <h1>ANALYZING AND RECOMMENDATIONS OF MUSIC TRENDS</h1>
+  <div class="home-box">
+    <center>
+
+      <h2>This web application has been developed by Sudhanva Satish, Tejasvi Kalburgi and Rohan Unnikrishnan as a part of Machine Learning Application Development Laboratory Mini Project for the year 2022-23</h2>
+      <h2>It has been made with the aim of taking one song as input from user and returning songs that are similar to it</h2>
+      <h2>K-Means Clustering is the ML algorithm used to provide recommendations</h2>
+      <div>
+        <h2></h2><a href="{{ url_for('login') }}">Click here to proceed</a></h2>
+      </div>
+  </center>
+  </div>
+</div>
+</body>
+</html>

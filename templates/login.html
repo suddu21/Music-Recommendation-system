@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>LOGIN</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="section">
+    	<section name="registration">
+            <div class="title">
+        <h1>LOGIN</h1>
+    </div>
+            <form class="myform" id="registration" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="user">USERNAME</label><br>
+                            <input type="text" id="user" name="user" placeholder="Username"/><br>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                            <label for="password">PASSWORD</label><br>
+                            <input type="password" id="password" name="password" placeholder="Password"/><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="login" value="LOGIN" ></td>
+                    </tr>
+                </table>
+            </form><br>
+            {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+                 <a href="{{ url_for('registration') }}">Don't have an account yet?</a>
+        </section>
+    </div>
+</body>
