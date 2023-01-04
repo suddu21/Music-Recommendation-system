@@ -1,0 +1,152 @@
+body {
+  background-color: #d3f6d1;
+  overflow: auto;
+}
+section {
+  width: 45%;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  overflow: hidden;
+  overflow: auto;
+  padding: 50px;
+}
+div[class="section"] {
+  text-align: center;
+  display: block;
+}
+h1 {
+  width: 380px;
+  height: 70px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  margin: auto;
+  word-break: break-word;
+  font-family: "Inter", sans-serif;
+  color: #42b883;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  text-align: center;
+}
+form {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+  display: inline-block;
+}
+label {
+  width: 50px;
+  height: 50px;
+  white-space: pre-wrap;
+  font-weight: 600;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  color: #42b883;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 10px;
+}
+input[type="text"],
+input[type="mail"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"] {
+  border: 2px solid #42b883;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 20 px;
+  background-color: #e0e0e0;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+input[type="radio"]
+  + label[for="male"]
+  + label[for="female"]
+  + label[for="others"] {
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+}
+input[ID="phone"] {
+  border: 2px solid #42b883;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 20 px;
+  background-color: #e0e0e0;
+  outline: none;
+  padding: 10px;
+  width: 70%;
+}
+input[id="country-code"] {
+  border: 2px solid #42b883;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 20 px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+input[type="submit"] {
+  border: 2px solid #42b883;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 50%;
+  height: 20 px;
+  background-color: #42b883;
+  color: white;
+  font-weight: 600;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  outline: none;
+  padding: 10px;
+}
+input:focus {
+  border: 4px solid #42b883;
+}
+div[class="dob"],
+div[class="gender"] {
+  width: 43%;
+  float: left;
+  text-align: left;
+  margin-bottom: 20px;
+}
+div[class="dov"],
+div[class="time"] {
+  width: 43%;
+  float: right;
+  text-align: left;
+  margin-bottom: 20px;
+}
+a {
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline;
+  width: auto;
+  height: auto;
+  white-space: pre-wrap;
+  font-weight: 600;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  color: #42b883;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 10px;
+}
+@media only screen and (max-width: 1024px) {
+section {
+  width: 90%;
+}
+input[type="text"],
+input[type="mail"],
+input[type="password"] {
+  width: 80%;
+}
+}
